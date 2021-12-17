@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    line-height: 1.6;
+    font-family: "Poppins", "sans-serif";
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.headerContainer {
+    background: linear-gradient(to right, #0cebeb, #20e3b2, #29ffc6);
+    padding: 15px 5px 0 0;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+.addRow {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 25px 150px;
+}
+
+.mainContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+.headerContainer .addRow button {
+    width: 100px;
+    margin-top: 10px;
+    height: 35px;
+    border-radius: 25px;
+    color: white;
+    background: black;
+}
+
+/* Input Container */
+
+.inputsContainer {
+    width: 26%;
+    border: black solid 1px;
+    padding: 10px 20px 20px 20px;
+    margin: 0;
+    border-radius: 5px;
+    box-shadow: 0px 0px 6px 0px rgba(8, 0, 8, 1);
+    background: #eef2f3;
+    height: 508px;
+}
+
+.forms {
+    display: flex;
+    flex-direction: column;
+}
+
+.forms input,
+.forms textarea {
+    outline: none;
+    border-radius: 23px;
+    border: none;
+    background-color: white;
+    padding: 10px;
+}
+
+.forms input::placeholder,
+.forms textarea::placeholder,
+.headerContainer input::placeholder {
+    text-align: center;
+    opacity: 0.7;
+}
+
+.forms label {
+    padding: 10px;
+    font-weight: 600;
+}
+
+.mainContainer button {
+    width: 68%;
+    margin-top: 10px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 25px;
+    color: white;
+    background: black;
+    padding: 5px 0px;
+}
+
+#search {
+    border-radius: 25px;
+    height: 35px;
+    margin-right: 100px;
+    margin-top: 10px;
+}
+.addRow input {
+    padding-left: 10px;
+    width: 120px;
+}
+
+/* Contacts container */
+
+.contactsContainer {
+    width: 73%;
+    padding: 10px 10px;
+    height: 508px;
+    border: black solid 1px;
+    background: #20e3b2;
+    box-shadow: 0px 0px 6px 0px rgba(8, 0, 8, 1);
+    overflow-y: scroll;
+}
+
+.entry,
+.tablehead {
+    display: inline-flex;
+    border: black solid 1px;
+    width: 85%;
+    padding: 5px;
+    justify-content: space-between;
+    position: relative;
+    color: rgb(82, 75, 75);
+}
+
+.tablehead {
+    font-weight: bold;
+    color: black;
+}
+
+.entry:nth-child(odd) {
+    background-color: white;
+}
+
+.row {
+    width: 23%;
+    margin: 0;
+}
+
+.select {
+    margin: auto;
+    width: 8%;
+}
+
+select {
+    width: 40px;
+}
+
+button:hover > *,
+button:hover,
+#AddBtnDropdown:hover {
+    cursor: pointer;
+    opacity: 0.7;
+    color: white;
+}

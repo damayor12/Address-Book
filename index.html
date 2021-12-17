@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Codeworks Address Book</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="container">
+            <!-- header container -->
+            <div class="headerContainer">
+                <div class="firstRow">
+                    <h1>Codeworks Address Book</h1>
+                </div>
+                <div class="addRow">
+                    <button id="AddBtnDropdown">Add NOW</button>
+                    <input type="text" id="search" placeholder="Search" />
+                </div>
+            </div>
+
+            <div class="mainContainer">
+                <div class="inputsContainer">
+                    <!--Big form class containing labels & all forms and 2 buttons delete and a-->
+                    <h2>Contacts Form</h2>
+                    <div class="forms">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" class="inputFields" placeholder="First name" />
+                        <!--class-->
+
+                        <label for="surname">Surname:</label>
+                        <input type="text" id="surname" class="inputFields" placeholder="Surname" />
+                        <label for="phone">Phone:</label>
+                        <input type="text" id="phone" class="inputFields" placeholder="10 digit number" />
+                        <label for="address">Address:</label>
+                        <input
+                            type="text"
+                            name="address"
+                            id="address"
+                            class="inputFields"
+                            placeholder="Where you live"
+                        />
+                    </div>
+
+                    <button id="Add">
+                        <span>
+                            <i class="fas fa-plus"></i>
+                        </span>
+                        Add Contact
+                    </button>
+                    <button id="Cancel">
+                        <span> <i class="fas fa-times"></i> </span>Cancel
+                    </button>
+                </div>
+
+                <div class="contactsContainer">
+                    <h2>Your Contacts</h2>
+                    <div class="tablehead">
+                        <div class="row"><p>Name</p></div>
+                        <div class="row"><p>Surname</p></div>
+                        <div class="row"><p>Phone</p></div>
+                        <div class="row"><p>Address</p></div>
+                        <div class="select drop">
+                            <select name="todos" class="dropdown">
+                                <option value="ascending">Sort Ascending</option>
+                                <option value="descending">Sort Descending</option>
+                                <option value="byDate">By Date</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="addcontact"></div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.0.js"></script>
+        <script type="text/javascript" src="app.js"></script>
+    </body>
+</html>
